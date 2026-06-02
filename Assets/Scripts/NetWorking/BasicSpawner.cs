@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using Fusion;
 using Fusion.Sockets;
 
-public class BasicSpawner : MonoBehaviour , INetworkRunnerCallbacks
+public class BasicSpawner : INetworkRunnerCallbacks
 {
     void INetworkRunnerCallbacks.OnPlayerJoined(NetworkRunner runner, PlayerRef player) { }
     void INetworkRunnerCallbacks.OnPlayerLeft(NetworkRunner runner, PlayerRef player) { }
@@ -26,15 +26,4 @@ public class BasicSpawner : MonoBehaviour , INetworkRunnerCallbacks
     void INetworkRunnerCallbacks.OnReliableDataReceived(NetworkRunner runner, PlayerRef player, ReliableKey key, ArraySegment<byte> data) { }
     void INetworkRunnerCallbacks.OnReliableDataProgress(NetworkRunner runner, PlayerRef player, ReliableKey key, float progress) { }
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
