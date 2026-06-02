@@ -25,6 +25,6 @@ This repository hold a unity frame work for Photon Fusion multiplayer set up on 
 
 ## Final Product
 
-- [ ] Unity FrameWork full functional
-- [ ] Unity FrameWork upload to unity package store
-- [ ] FrameWork used on project
+- [ ] Unity Framework full functional
+- [ ] Unity Framework upload to unity package store
+- [ ] Framework used on project
