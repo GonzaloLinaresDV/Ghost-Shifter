@@ -11,7 +11,8 @@ public class PlayerController : NetworkBehaviour
 {
     private NetworkButtons previousButtons;
 
-    [SerializableType]private CharacterController controller;
+    [SerializeField] private CharacterController controller;
+    [SerializeField] private float viewDistance;
     public float speed;
 
     bool interact;
@@ -45,6 +46,11 @@ public class PlayerController : NetworkBehaviour
         {
             interact=true;
         }
+        Debug.DrawRay(
+            myCamera.transform.position,
+            myCamera.transform.forward * viewDistance,
+            Color.red
+            );
     }
     public override void Spawned()
     {
@@ -92,7 +98,7 @@ public class PlayerController : NetworkBehaviour
             myCamera.transform.position,
             myCamera.transform.forward);
 
-        if (Physics.Raycast(ray, out RaycastHit hit, 15f, interactableLayer))
+        if (Physics.Raycast(ray, out RaycastHit hit, viewDistance, interactableLayer))
         {
             if (hit.collider.TryGetComponent<IInteractuable>(out var interactuable))
             {

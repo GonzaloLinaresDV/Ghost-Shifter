@@ -3,11 +3,10 @@ using System;
 
 public class Door : MonoBehaviour, IInteractuable
 {
-    [SerializeField] private GameObject outline;
     
     public void Highlight()
     {
-        outline.SetActive(true);
+        GetComponent<MeshRenderer>().materials[1].SetFloat("_playerNear", 1);
     }
 
     public void Interact(PlayerController playerController)
@@ -17,6 +16,6 @@ public class Door : MonoBehaviour, IInteractuable
 
     public void UnHighlight()
     {
-        outline.SetActive(false);
+        GetComponent<MeshRenderer>().materials[1].SetFloat("_playerNear", 0);
     }
 }

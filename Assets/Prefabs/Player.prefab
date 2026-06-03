@@ -364,6 +364,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e24135ae004f3eb488c1954909bba97a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  controller: {fileID: 0}
+  viewDistance: 2.5
   speed: 5
   myCamera: {fileID: 7854057466360865315}
   mouseSense: 200
