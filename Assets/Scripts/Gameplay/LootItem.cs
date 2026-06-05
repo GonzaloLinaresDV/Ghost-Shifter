@@ -6,7 +6,7 @@ public class LootItem : NetworkBehaviour, ILooteable, IInteractuable
 {
     [SerializeField]private LootDefinition _definition;
 
-    private MeshRenderer _meshRenderer;
+    private MeshRenderer[] _meshRendereres;
 
     [Networked]
     public byte ConditionIndex { get; set; }
@@ -19,7 +19,8 @@ public class LootItem : NetworkBehaviour, ILooteable, IInteractuable
 
     private void Awake()
     {
-        _meshRenderer = GetComponent<MeshRenderer>();
+        _meshRendereres = GetComponentsInChildren<MeshRenderer>();
+
     }
 
     override public void Spawned()
@@ -39,16 +40,22 @@ public class LootItem : NetworkBehaviour, ILooteable, IInteractuable
 
     public void Interact(PlayerController playerController)
     {
-        throw new System.NotImplementedException();
+        Debug.Log("AGARRO ESTE EL ITEM");
     }
 
     public void Highlight()
     {
-        GetComponent<MeshRenderer>().materials[1].SetFloat("_playerNear", 1);
+        foreach (var renderer in _meshRendereres)
+        {
+            renderer.materials[1].SetFloat("_playerNear", 1);
+        }
     }
 
     public void UnHighlight()
     {
-        GetComponent<MeshRenderer>().materials[1].SetFloat("_playerNear", 0);
+        foreach (var renderer in _meshRendereres)
+        {
+            renderer.materials[1].SetFloat("_playerNear", 0);
+        }
     }
 }
