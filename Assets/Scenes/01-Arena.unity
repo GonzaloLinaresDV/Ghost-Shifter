@@ -539,7 +539,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63672f4056627464abef252b7b198c69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LootItem
-  _definition: {fileID: 0}
+  _definition: {fileID: 11400000, guid: 17ceb5ad277c2d944b7a5ded0a4f36fa, type: 2}
   _ConditionIndex: 0
 --- !u!1 &1559173387
 GameObject:
