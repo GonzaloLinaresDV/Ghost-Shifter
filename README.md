@@ -1,8 +1,8 @@
 # Ghost Shifter
 
-A cooperative multiplayer game built with Unity 6 and Photon Fusion.
+Ghost Shifter is a cooperative multiplayer game currently under development.
 
-Players join a shared session, explore the environment, interact with objects, solve objectives together, and progress through different scenarios.
+The project is built on top of a custom multiplayer framework using Photon Fusion, providing matchmaking, networking, interactions and cooperative gameplay systems.
 
 ## Features
 
@@ -61,6 +61,11 @@ Players join a shared session, explore the environment, interact with objects, s
 - [ ] Inventory System
 - [ ] Cooperative Puzzles
 - [ ] Mission Progression
+- [ ] Key / Lock System
+- [ ] Switches
+- [ ] Collectables
+- [ ] Trigger Zones
+- [ ] Cooperative Interactions
 
 ### Polish
 - [ ] UI Improvements
