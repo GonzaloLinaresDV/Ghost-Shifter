@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89d4d3a5a9671c14eaa13f2d67a45f59, type: 3}
+  m_Name: Watch
+  m_EditorClassIdentifier: Assembly-CSharp::LootDefinition
+  itemName: Watch
+  weight: 1
+  baseValue: 5
+  Conditions:
+  - conditionName: Broken
+    valueMultiplier: 0.2
+  - conditionName: Rusty
+    valueMultiplier: 0.4
+  - conditionName: Good
+    valueMultiplier: 1
+  - conditionName: Excelent
+    valueMultiplier: 1.5

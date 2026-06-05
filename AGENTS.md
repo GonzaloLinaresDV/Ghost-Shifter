@@ -2,7 +2,7 @@
 - Project name: Ghost-Shifter
 - Unity version: Unity 6000.4.9f1
 - Active game object:
-  - Name: Player
+  - Name: Sphere
   - Tag: Untagged
-  - Layer: Default
+  - Layer: Interactable
 <!-- UNITY CODE ASSIST INSTRUCTIONS END -->
