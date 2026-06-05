@@ -1,88 +1,138 @@
 # Ghost Shifter
 
-Ghost Shifter is a cooperative multiplayer game currently under development.
+A cooperative multiplayer game built with Unity 6 and Photon Fusion.
 
-The project is built on top of a custom multiplayer framework using Photon Fusion, providing matchmaking, networking, interactions and cooperative gameplay systems.
+Ghost Shifter is a multiplayer-first project focused on cooperative gameplay, exploration, world interaction, and teamwork. Players join shared sessions, complete objectives together, solve environmental challenges, and progress through different scenarios.
+
+The project is built on top of a custom networking framework developed specifically for scalable cooperative experiences.
+
+---
 
 ## Features
 
-- Multiplayer networking with Photon Fusion
-- Lobby and matchmaking system
-- Player spawning and synchronization
-- Object interaction system
-- Highlight system for interactable objects
-- Networked doors and world interactions
-- Session reconnection support
-- In-game voice chat
-- First-person controller
+### Multiplayer
 
-## Stack
+* Multiplayer networking with Photon Fusion
+* Lobby and matchmaking system
+* Session creation and joining
+* Player spawning and synchronization
+* Scene synchronization
+* Session reconnection support
 
-- Unity 6
-- Photon Fusion
-- C#
-- Git
+### Gameplay
+
+* Interactable object system
+* Networked door interactions
+* Highlight feedback system
+* First-person controller
+* Cooperative world interactions
+
+### User Experience
+
+* Chat system
+* Reconnection flow
+* Multiplayer session management
+
+---
+
+## Technology Stack
+
+* Unity 6
+* Photon Fusion
+* C#
+* Git
+
+---
 
 ## Current Systems
 
 ### Networking
-- Host/Client architecture
-- Networked player spawning
-- Input synchronization
-- Scene synchronization
+
+* Host/Client architecture
+* Networked player spawning
+* Input synchronization
+* Scene synchronization
+* Networked world interactions
 
 ### Gameplay
-- Interactable object system
-- Door interaction system
-- Highlight feedback system
-- Multiplayer cooperative mechanics
+
+* Interactable object framework
+* Door interaction system
+* Highlight system
+* Multiplayer cooperative mechanics
 
 ### User Experience
-- Lobby creation and joining
-- Matchmaking flow
-- Reconnection handling
-- Chat system
+
+* Lobby creation and joining
+* Matchmaking flow
+* Session recovery and reconnection
+* In-game communication systems
+
+---
 
 ## Roadmap
 
-### Multiplayer
-- [x] Lobby
-- [x] Matchmaking
-- [x] Player Spawning
-- [x] Basic Interactions
-- [ ] Voice Chat
-- [ ] Dedicated Servers
-- [ ] Friend Invites
+### Core Multiplayer
 
-### Gameplay
-- [x] Door Interactions
-- [x] Highlight System
-- [ ] Objective System
-- [ ] Inventory System
-- [ ] Cooperative Puzzles
-- [ ] Mission Progression
-- [ ] Key / Lock System
-- [ ] Switches
-- [ ] Collectables
-- [ ] Trigger Zones
-- [ ] Cooperative Interactions
+* [x] Lobby
+* [x] Matchmaking
+* [x] Player Spawning
+* [x] Reconnection
+* [x] Basic Interactions
+* [ ] Voice Chat
+* [ ] Dedicated Servers
+* [ ] Friend Invites
+* [ ] Host Migration
+
+### Gameplay Systems
+
+* [x] Door Interactions
+* [x] Highlight System
+* [ ] Objective System
+* [ ] Inventory System
+* [ ] Key and Lock System
+* [ ] Switches and Triggers
+* [ ] Cooperative Puzzles
+* [ ] Mission Progression
+* [ ] Save Progress System
 
 ### Polish
-- [ ] UI Improvements
-- [ ] Audio Feedback
-- [ ] Visual Effects
-- [ ] Performance Optimization
 
-## Project Goals
+* [ ] User Interface Improvements
+* [ ] Audio Feedback
+* [ ] Visual Effects
+* [ ] Animation Improvements
+* [ ] Performance Optimization
 
-- Create a solid multiplayer foundation using Photon Fusion.
-- Develop reusable gameplay systems for cooperative experiences.
-- Build a complete multiplayer game on top of the framework.
-- Release a polished and scalable product.
+---
+
+## Project Vision
+
+The goal of Ghost Shifter is to create a complete cooperative multiplayer experience while building a robust and reusable multiplayer architecture.
+
+The project focuses on:
+
+* Reliable multiplayer gameplay
+* Reusable interaction systems
+* Cooperative mechanics that encourage teamwork
+* Scalable networking architecture
+* Expandable mission and objective systems
+
+---
+
+## Development Status
+
+Ghost Shifter is currently in active development.
+
+The multiplayer foundation is functional, including matchmaking, player synchronization, reconnection, and world interactions. Current development is focused on expanding gameplay systems, objectives, and cooperative mechanics.
+
+---
 
 ## Screenshots
 
 Coming soon...
+
+---
 
 ## License
 
