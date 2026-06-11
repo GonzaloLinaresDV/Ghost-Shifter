@@ -185,6 +185,7 @@ GameObject:
   - component: {fileID: 7825726734436888043}
   - component: {fileID: 1054303247767657459}
   - component: {fileID: 4379235506793443882}
+  - component: {fileID: 5525782281067225024}
   m_Layer: 7
   m_Name: Player
   m_TagString: Untagged
@@ -334,6 +335,7 @@ MonoBehaviour:
   NetworkedBehaviours:
   - {fileID: 1054303247767657459}
   - {fileID: 4379235506793443882}
+  - {fileID: 5525782281067225024}
   ForceRemoteRenderTimeframe: 0
 --- !u!114 &1054303247767657459
 MonoBehaviour:
@@ -371,6 +373,20 @@ MonoBehaviour:
   mouseSense: 200
   cameraPivot: {fileID: 2824401393985350878}
   jumpForce: 7.5
+  Inventory: {fileID: 5525782281067225024}
+--- !u!114 &5525782281067225024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3502211812165357443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea18a27cbc343754ab0b3ae6d93f7904, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  maxWeight: 100
 --- !u!1 &4426289051263568870
 GameObject:
   m_ObjectHideFlags: 0

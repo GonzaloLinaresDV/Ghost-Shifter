@@ -40,7 +40,13 @@ public class LootItem : NetworkBehaviour, ILooteable, IInteractuable
 
     public void Interact(PlayerController playerController)
     {
-        Debug.Log("AGARRO ESTE EL ITEM");
+        if (!playerController.Inventory.AddItem(_definition, 1))
+        {
+            Debug.Log("Inventario lleno");
+            return;
+        }
+        playerController.ClearCurrentInteractuable();
+        Runner.Despawn(Object);
     }
 
     public void Highlight()

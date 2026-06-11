@@ -7,7 +7,7 @@ using UnityEngine;
 public class LootDefinition : ScriptableObject
 {
     public string itemName;
-    public float weight;
+    public int weight;
     public int baseValue;
     public LootCondition[] Conditions;
 }

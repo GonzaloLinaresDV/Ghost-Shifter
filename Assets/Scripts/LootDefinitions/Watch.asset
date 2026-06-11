@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Watch
   m_EditorClassIdentifier: Assembly-CSharp::LootDefinition
   itemName: Watch
-  weight: 1
+  weight: 40
   baseValue: 5
   Conditions:
   - conditionName: Broken

@@ -29,6 +29,8 @@ public class PlayerController : NetworkBehaviour
     public float jumpForce;
 
     IInteractuable currentInteractuable;
+
+    public PlayerInventory Inventory;
     private void Awake()
     {
            controller = GetComponent<CharacterController>();
@@ -127,6 +129,7 @@ public class PlayerController : NetworkBehaviour
             currentInteractuable = null;
         }
 
+
         #endregion
 
         #region Movement
@@ -158,6 +161,12 @@ public class PlayerController : NetworkBehaviour
 
         #endregion
 
+
+      
         previousButtons = buttons;
+    }
+    public void ClearCurrentInteractuable()
+    {
+        currentInteractuable = null;
     }
 }
