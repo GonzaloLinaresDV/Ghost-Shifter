@@ -6,6 +6,7 @@ public class PlayerInventory : NetworkBehaviour
     [SerializeField] private int maxWeight = 100;
 
     private List<InventoryItem> items = new();
+    public GameObject inventoryScreen;
 
 
     private void Update()
@@ -100,6 +101,11 @@ public class PlayerInventory : NetworkBehaviour
         }
 
         Debug.Log("======================");
+    }
+
+    public void OpenInventoryScreen()
+    {
+        inventoryScreen.SetActive(true);
     }
 
 

@@ -2,7 +2,7 @@
 - Project name: Ghost-Shifter
 - Unity version: Unity 6000.4.9f1
 - Active game object:
-  - Name: Watch (2)
+  - Name: Items
   - Tag: Untagged
-  - Layer: Interactable
+  - Layer: UI
 <!-- UNITY CODE ASSIST INSTRUCTIONS END -->
